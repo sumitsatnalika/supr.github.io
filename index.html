@@ -34,7 +34,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body id="top">
+<body id="top" onclick="playAudio('img/bgm.mp3')">
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -43,11 +43,6 @@
     <section class="navigation">
         <header>
             <div class="header-content">
-                <div>
-                    <audio controls src="img/bgm.mp3" type="audio/mpeg">
-                    Audio Tag Not Supported
-                    </audio>
-                </div>
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
@@ -139,6 +134,7 @@
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div class="order-3 wp3">
                     <p><strong>19th November</strong></p>
+
                     <img src="img/engagement.jpg" class="col-md-18 col-sm-12 col-xs-12 leftcol">
                     <!-- <h5>Bhaat <span class="time">1PM - 3PM</span></h5>
                     <p>Join us for the Bhaat ceremony which represents love and respect shown by the maternal uncles towards the family.</p> -->
@@ -502,6 +498,11 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
+</script>
+<script>
+    function playAudio(url) {
+        new Audio(url).play();
+    }
 </script>
 </body>
 </html>
