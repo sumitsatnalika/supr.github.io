@@ -34,7 +34,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
-<body id="top" onclick="playAudio('img/bgm.mp3')">
+<body id="top">
+<audio id="default" src="bgm/default.mp3"></audio>
+<audio id="pool_party" src="bgm/pool_party.mp3"></audio>
+<audio id="haldi" src="bgm/haldi.mp3"></audio>
+<audio id="sangeet" src="bgm/sangeet.mp3"></audio>
+<audio id="bhaat" src="bgm/bhaat.mp3"></audio>
+<audio id="wedding" src="bgm/wedding.mp3"></audio>
+<audio id="engagement" src="bgm/engagement.mp3"></audio>
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -157,15 +164,15 @@
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 text-center">
                 <p><strong>19th May</strong></p>
-                <img src="img/mayra.jpg" class="col-sm-push-2 wp3 col-md-6 col-sm-12 col-xs-12 leftcol">
-                <img src="img/eng.jpg" class="col-sm-push-2 wp4 col-md-6 col-sm-12 col-xs-12 leftcol">
-                <img src="img/engagement.jpg" class="col-sm-push-2 wp5 col-md-6 col-sm-12 col-xs-12 leftcol">
+                <img src="img/mayra.jpg" class="col-sm-push-2 wp3 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('bhaat')">
+                <img src="img/eng.jpg" class="col-sm-push-2 wp4 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('engagement')">
+                <img src="img/engagement.jpg" class="col-sm-push-2 wp5 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('sangeet')">
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 text-center">
                 <p><strong>20th May</strong></p>
-                <img src="img/haldi.jpg" class="col-sm-push-2 wp6 col-md-6 col-sm-12 col-xs-12 leftcol">
-                <img src="img/pool_party.jpg" class="col-sm-push-2 wp7 col-md-6 col-sm-12 col-xs-12 leftcol">
-                <img src="img/wedding.jpg" class="col-sm-push-2 wp8 col-md-6 col-sm-12 col-xs-12 leftcol">
+                <img src="img/haldi.jpg" class="col-sm-push-2 wp6 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('haldi')">
+                <img src="img/pool_party.jpg" class="col-sm-push-2 wp7 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('pool_party')">
+                <img src="img/wedding.jpg" class="col-sm-push-2 wp8 col-md-6 col-sm-12 col-xs-12 leftcol" onclick="playAudio('wedding')">
             </div>
         </div>
         <div class="row section-padding">
@@ -184,48 +191,38 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
                     </button>
                     <h2 class="text-center section-padding">Ugh... dress codes?</h2>
-                        <h3>Bhaat & Mayara  <span class="time">19th May, 12:30PM</span></h3>
-                        <p style="border:1px; border-style:solid; padding: 1em; color:#93c572;">
-                            <strong>Ethnic</strong>
-                            <br>
-                            Ladies can flaunt their unconventional sarees, lehengas, anarkalis, dresses and the list
-                            goes on whereas gentlemen can take out their kurta-pajama, bundi.
-                            <br><b>The theme color is Pista Green!</b>
-                        </p>
-                    <h3>Engagement Ceremony  <span class="time">19th May, 6PM</span></h3>
-                    <p style="border:1px; border-style:solid; padding: 1em;">
-                        <strong>Indo-western</strong>
+                    <h3>Bhaat & Mayara  <span class="time">(19th May, 12:30PM onwards)</span></h3>
+                    <p style="border:1px; border-style:solid; padding: 1em; color:#93c572;">
+                        <strong>Ethnic</strong>
+                        <br>
+                        Let's showcase the beauty of our Indian culute by wearing the traditional ethnic wear!!! 
+                        <br><b>The theme color is Pista Green!</b>
+                    </p>
+                    <h3>Engagement Ceremony & Sangeet Sandhya <span class="time">(19th May, 6PM onwards)</span></h3>
+                    <p style="border:1px; border-style:solid; padding: 1em; color:#9400D3">
+                        <strong>Indo-Western</strong>
                         <br>
                         Ladies can flaunt their unconventional sarees, lehengas, anarkalis, dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a suit/blazer, you can do a high-neck(band gala) waistcoat & shirt combo.
+                        goes on.<br>Gentlemen can wear any kind of suit or just blazer. If you don't like to wear a suit/blazer, you can do a high-neck(band gala) waistcoat & shirt combo.
                     </p>
-                    <h3>Sangeet <span class="time">19th May, 7PM</span></h3>
-                    <p style="border:1px; border-style:solid; padding: 1em;">
-                        <strong>Indo-western</strong>
-                        <br>
-                        Ladies can flaunt their unconventional sarees, lehengas, anarkalis,
-                        dresses and the list goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a suit/blazer, you can do a high-neck (band gala) waistcoat & shirt combo.
-                    </p>
-                    <h3>Tel-Baan <span class="time">20th May, 09:30AM</span></h3>
+                    <h3>Tel-Baan <span class="time">(20th May, 09:30AM onwards)</span></h3>
                     <p style="border:1px; border-style:solid; padding: 1em; color:#e6c300;">
                         <strong>Ethnic</strong>
                         <br>
-                        Ladies can flaunt their unconventional sarees, lehengas, anarkalis, dresses and the list
-                        goes on whereas gentlemen can take out their kurta-pajama, bundi.
+                        Elegant and stunning Indian attire soothing to the eyes!!!
                         <br><b>The theme color is Yellow!</b>
                     </p>
-                    <h3>Pool Party <span class="time">20th May, 11:30AM</span></h3>
-                    <p style="border:1px; border-style:solid; padding: 1em;">
+                    <h3>Pool Party <span class="time">(20th May, 11:30AM onwards)</span></h3>
+                    <p style="border:1px; border-style:solid; padding: 1em; color:#00BFBF;">
                         <strong>Summer Casuals</strong>
                         <br>
-                        Wear comfortable summer casual wears and get ready to jump into the pool.
+                        Ladies get your floral/printed dresses on!<br>Gentlemen it's time for those Hawaiian shirts, shorts, fedoras and cool tank tops!!!
                     </p>
-                    <h3>Wedding Ceremony  <span class="time">20th May, 6PM</span></h3>
-                    <p style="border:1px; border-style:solid; padding: 1em;">
-                        <strong>Indo-western</strong>
+                    <h3>Wedding Ceremony  <span class="time">(20th May, 6PM onwards)</span></h3>
+                    <p style="border:1px; border-style:solid; padding: 1em; color:#FF7F50">
+                        <strong>Indian Traditional / Western Partywear</strong>
                         <br>
-                        Ladies can flaunt their unconventional sarees, lehengas, anarkalis dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a suit/blazer, you can do a high-neck (band gala) waistcoat & shirt combo.
+                        Time to show off the suits, tuxedos, blazers and what not for Men!<br>Ladies can make the atmosphere lively with their vibrant lehengas, ghagras and sarees!!!
                     </p>
                 </div>
             </div>
@@ -422,11 +419,26 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vMaEtZIanAerPMRQTjtevAlZSI-39LM&callback=initMap"></script>
 
 <script>
-    var isPlaying = false
-    function playAudio(url) {
-        if (isPlaying)
-            new Audio(url).play();
+    var nowPlaying = null
+    function playAudio(audioId) {
+        pauseAudio(audioId);
+        var audio = document.getElementById(audioId);
+        audio.play();
+        nowPlaying = audioId;
     }
+
+    function pauseAudio(audioId) {
+        if (nowPlaying != null && nowPlaying != audioId) {
+            var audio = document.getElementById(nowPlaying);
+            audio.pause();
+            audio.load();
+        }
+    }
+
+    // window.onload=function(){
+    //     document.getElementById('default').play();
+    //     nowPlaying = 'default';
+    // }
 </script>
 </body>
 </html>
