@@ -6,7 +6,7 @@
                 transform: translate3d(-108rem, 0, 0);
             }
         }
-
+        
         .img-ticker {
             animation: ticker-kf 18s linear infinite;
         }
@@ -47,7 +47,7 @@
         .bride-contact {
             position: fixed;
             bottom: 10px;
-            left: -110px;
+            left: -106px;
             z-index: 9999;
             transition: .2s;
         }
@@ -86,7 +86,7 @@
         .groom-contact {
             position: fixed;
             bottom: 10px;
-            right: -120px;
+            right: -115px;
             z-index: 9999;
             transition: .2s;
         }
